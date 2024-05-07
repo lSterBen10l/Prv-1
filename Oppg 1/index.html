@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&family=Ubuntu&display=swap" rel="stylesheet">
+        <style>
+            .container {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                padding: 20px;
+            }
+
+            .menu {
+                display: flex;
+                gap: 10px;
+            }
+
+            .menu button {
+                cursor: pointer;
+            }
+
+            .special-button {
+                background-color: #4CAF50;
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+                border-radius: 12px;
+            }
+
+            @media screen and (max-width: 600px) {
+                .container {
+                flex-direction: column;
+                }
+            }
+
+            .poetsen-one-regular {
+                font-family: "Poetsen One", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+            }
+
+        </style>
+    </head>
+<body>
+
+    <div class="container">
+        <div id="logo">
+            <img style="width: 100px;" src="KIWI_logo.jpg" alt="Logo">
+        </div>
+
+        <div class="menu">
+            <button style="font-family: Poetsen One;" class="special-button">Knapp 1</button>
+            <button>Knapp 2</button>
+            <button>Knapp 3</button>
+            <button>Knapp 4</button>
+        </div>
+
+        <div id="search">
+            <input type="text" placeholder="Søk..">
+        </div>
+    </div>
+
+</body>
+</html>
